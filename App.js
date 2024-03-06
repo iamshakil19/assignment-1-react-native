@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Icon from "react-native-vector-icons/FontAwesome";
+import Icon from "react-native-vector-icons/Entypo";
 
 export default function App() {
   return (
@@ -54,7 +54,50 @@ export default function App() {
         </View>
 
         <View style={{ marginTop: 30 }}>
-          <Icon name="rocket" size={30} color="#900" />
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 15,
+              marginBottom: 10,
+            }}
+          >
+            <Icon name="location-pin" size={25} />
+            <Text style={{ fontSize: 15 }}>San Francisco</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 15,
+              marginBottom: 10,
+            }}
+          >
+            <Icon name="link" size={25} />
+            <Text style={{ fontSize: 15 }}>https://github.blog</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 15,
+              marginBottom: 10,
+            }}
+          >
+            <Icon name="twitter" size={25} color={"gray"} />
+            <Text style={{ fontSize: 15, color: "gray" }}>Not Available</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 15,
+              marginBottom: 10,
+            }}
+          >
+            <Icon name="home" size={25} />
+            <Text style={{ fontSize: 15 }}>@github</Text>
+          </View>
         </View>
       </View>
     </SafeAreaView>
